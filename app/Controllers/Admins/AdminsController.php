@@ -194,14 +194,15 @@ class AdminsController extends BaseController{
     
 
     public function displayJobs(){
+
         $session = session();
 
         $jobs = new Job();
 
         $allJobs = $jobs->findAll();
-
         
         return view('admins/all-jobs',compact('session','allJobs'));
+        
     }
 
     
