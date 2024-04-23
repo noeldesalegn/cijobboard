@@ -202,7 +202,7 @@ class AdminsController extends BaseController{
         $allJobs = $jobs->findAll();
         
         return view('admins/all-jobs',compact('session','allJobs'));
-        
+
     }
 
     
@@ -227,7 +227,7 @@ class AdminsController extends BaseController{
 
         $data=[
             "title" =>$this->request->getPost('title'),
-           "company_image" => $imgName,            
+            "company_image" => $imgName,            
             "company_name" =>$this->request->getPost('company_name'),
             "job_type" =>$this->request->getPost('job_type'),
             "location" =>$this->request->getPost('location'),
